@@ -1,2 +1,2 @@
-# Prot-tipo-Gest-o-de-Tarefas
-Um protótipo de uma ferramenta de gestão de tarefas
+# Protótipo Gestão de Tarefas
+Um protótipo de uma ferramenta de gestão de tarefas feito como parte da participação de uma pesquisa.
