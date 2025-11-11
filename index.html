@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gestão de Tarefas</h1>
+    <div class="filter">
+      <label for="statusFilter">Filtrar por status:</label>
+      <select id="statusFilter" onchange="filterTasks()">
+        <option value="all">Todos</option>
+        <option value="todo">A Fazer</option>
+        <option value="doing">Em Progresso</option>
+        <option value="done">Feito</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <div class="task-container">
+      <button class="add-btn" onclick="addTask()">+ Nova Tarefa</button>
+      <div id="taskList" class="task-list"></div>
+    </div>
+  </main>
+
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <h3>Editar Tarefa</h3>
+      <input type="text" id="editTitle" placeholder="Título da tarefa">
+      <select id="editStatus">
+        <option value="todo">A Fazer</option>
+        <option value="doing">Em Progresso</option>
+        <option value="done">Feito</option>
+      </select>
+      <div class="modal-buttons">
+        <button onclick="saveEdit()">Salvar</button>
+        <button onclick="closeModal()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
